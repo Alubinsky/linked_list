@@ -69,20 +69,28 @@ Feel free to fork this repository and submit pull requests for improvements.
 
 Step 1:
 Clone the reprository with the following code:
+~~~
 git clone https://github.com/Alubinsky/linked_list.git
 cd linked_list
+~~~
 
 Step 2:
 Compile the project:
+~~~
 gcc main.c linked_list.c -o linked_list
+~~~
 
 Step 3:
 Run the program:
+~~~
 ./linked_list
+~~~
 
 Step 4:
 If you wish to only run the linked list seperatly then follow the code shown here:
+~~~
 gcc main.c linked_list.c -o linked_list
+~~~
 
 //You will then be given options on how to interact with the linked list you are creating. 
 
@@ -90,22 +98,30 @@ If you wish to use the linked list in a project that you are currently follow th
 
 Step 1: 
 clone the reprository:
+~~~
 git clone https://github.com/Alubinsky/linked_list.git
 cd linked_list
+~~~
 
 Step 2:
 Add the header file for the linked list in the main source file:
+~~~
 #include "linked_list.h"
+~~~
 
 Step 3:
 Compile the project files:
+~~~
 gcc your_program.c linked_list.c -o your_program
+~~~
 
 EXAMPLE:
 //This code will add three nodes with the values 5, 3 and 8 to a linked list. Then this list will be sorted, printed, and then finally deleted.
+
+```
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h
+#include <stdbool.h>
 #include "linked_list.h"
 
 int main(void) {
@@ -115,10 +131,10 @@ int main(void) {
     list = insert_at_tail(list, 3);
     list = insert_at_tail(list, 8);
     
-    
     list = sort_list(list);
     print_list(list);
     
     delete_list(list);
     return 0;
 }
+```
